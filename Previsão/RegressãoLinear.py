@@ -7,13 +7,14 @@ print(df.DESCR)
 
 #%%
 previsores = df.data
-classificadores = df.target
+alvo = df.target
+alvo[0]
 
 #%%
 from sklearn.model_selection import train_test_split
 
 # Separando dados de treino e teste
-X_treino, X_teste, y_treino, y_teste = train_test_split(previsores, classificadores, test_size=0.3)
+X_treino, X_teste, y_treino, y_teste = train_test_split(previsores, alvo, test_size=0.3)
 
 #%%
 from sklearn.linear_model import LinearRegression

@@ -24,7 +24,7 @@ for i in range(1, 11):
 plt.plot(range(1, 11), wcss)
 plt.title('O Metodo Elbow')
 plt.xlabel('Numero de Clusters')
-plt.ylabel('WSS') #within cluster sum of squares
+plt.ylabel('WSS')
 plt.show()
 
 #%%
@@ -57,5 +57,3 @@ plt.xlabel('Comprimento da pétala (cm)')
 plt.ylabel('Largura da pétala (cm)')
 
 plt.show()
-
-#%%
